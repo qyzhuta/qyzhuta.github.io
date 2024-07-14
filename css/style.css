@@ -68,8 +68,25 @@ main {
     margin-bottom: 15px;
 }
 
-.profile-info h1, .profile-info h2, .profile-info p {
+.profile-info h1 {
+    font-size: 1.8em;  // Slightly increased size for the main name
+    font-weight: 600; // Bold for name
+}
+
+.profile-info h2 {
+    font-size: 1.2em; // Increased size for the title
+    font-weight: 400; // Normal weight for title
+    margin-top: 5px;
+}
+
+.profile-info p {
     text-align: center;
+}
+
+.about-text, .group-news {
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
 }
 
 footer {
