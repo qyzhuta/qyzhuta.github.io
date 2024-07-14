@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -48,22 +48,40 @@ main {
     padding: 20px;
 }
 
-#home {
+#home .home-content {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
 }
 
-.home-left, .home-middle, .home-right {
+.profile-section {
+    display: flex;
+    align-items: center;
     padding: 20px;
-    margin: 10px;
-    flex: 1;
+    margin-top: 20px; /* Add spacing from nav bar */
 }
 
 .profile-img {
     width: 200px;
     height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.profile-info h1 {
+    font-size: 1.5em;
+    font-weight: 600; /* Bold for name */
+}
+
+.profile-info h2 {
+    font-size: 0.9em;
+    font-weight: 400; /* Normal weight for title */
+    margin-top: 5px;
+}
+
+.about-text, .group-news {
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
 }
 
 footer {
@@ -71,5 +89,5 @@ footer {
     padding: 10px;
     background-color: #2e8b57;
     color: white;
-    margin-top: auto;
+    margin-top: auto; /* Ensure footer is at the bottom */
 }
