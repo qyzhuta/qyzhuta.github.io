@@ -8,20 +8,20 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #ff9800; /* 改为橘黄色 */
+    background-color: #ff9800; /* 橘黄色 */
     color: white;
 }
 
 .profile-img {
     width: 150px;
     height: auto;
-    border-radius: 0; /* 改为长方形 */
+    border-radius: 0; /* 长方形 */
     display: block;
     margin: 0 auto;
 }
 
 nav {
-    background-color: #444;
+    background-color: #2e8b57; /* 墨绿色 */
     overflow: hidden;
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #3cb371; /* 更浅的绿色 */
 }
 
 main {
@@ -60,6 +60,7 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none; /* 默认隐藏所有部分 */
 }
 
 footer {
