@@ -57,22 +57,28 @@ main {
 
 .profile-section {
     display: flex;
-    align-items: flex-start;  // Align the items to the start of the flex container
+    align-items: flex-start;  // Ensure the children align at their top edges
     padding: 20px;
-    margin-top: 20px;  // Adjust as needed to give space from the navigation bar
+    margin-top: 20px;  // Space from the nav bar, adjust if necessary
 }
 
 .profile-img {
     width: 200px;
     height: auto;
-    margin-right: 20px;  // Maintain space between the image and text
+    margin-right: 20px;  // Space between the image and the text
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;  // Helps center the text if the image is taller
+    align-items: flex-start;  // Align text items to the left and top
 }
+
+.profile-info h1, .profile-info h2, .profile-info p {
+    margin: 0;  // Remove any default margin to ensure top alignment
+    padding: 0;  // Ensure no padding disrupts the alignment
+}
+
 
 .profile-info h1 {
     font-size: 1.8em;
