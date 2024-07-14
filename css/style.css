@@ -15,36 +15,36 @@ body {
 header {
     background-color: #ff7500; /* 橘黄色 */
     color: white;
-    padding: 30px 20px; /* 增加 padding 以增加高度 */
+    padding: 40px 20px; /* 增加 padding 以增加高度 */
+    text-align: center;
 }
 
 .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .profile-img {
-    width: 120px; /* 略微增大图片宽度 */
+    width: 150px; /* 增大图片宽度 */
     height: auto;
     border-radius: 0; /* 长方形 */
-    margin-bottom: 15px; /* 增加底部间距 */
+    margin-bottom: 20px; /* 增加底部间距 */
 }
 
 .header-text h1 {
-    margin: 5px 0 10px 0; /* 增加底部 margin 以增加间距 */
-    font-size: 1.2em; /* 调整字体大小以适应高度 */
+    margin: 10px 0; /* 增加 margin 以增加间距 */
+    font-size: 1.5em; /* 调整字体大小 */
 }
 
 .header-text h2 {
-    margin: 0;
-    font-size: 1em; /* 调整字体大小以适应高度 */
+    margin: 5px 0; /* 增加 margin 以增加间距 */
+    font-size: 1.2em; /* 调整字体大小 */
 }
 
 .header-text p {
-    margin: 5px 0 0 0; /* 增加顶部 margin */
-    font-size: 0.9em; /* 调整字体大小 */
+    margin: 5px 0; /* 增加 margin 以增加间距 */
+    font-size: 1em; /* 调整字体大小 */
 }
 
 nav {
@@ -90,12 +90,11 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: none; /* 默认隐藏所有部分 */
 }
 
 footer {
     text-align: center;
-    padding: 5px; /* 减少 footer 的 padding */
+    padding: 10px; /* 减少 footer 的 padding */
     background-color: #2e8b57; /* 墨绿色 */
     color: white;
     margin-top: 20px; /* 增加顶部 margin 以增加间距 */
