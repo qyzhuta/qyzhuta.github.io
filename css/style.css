@@ -57,20 +57,21 @@ main {
 
 .profile-section {
     display: flex;
-    align-items: center;  // Align items vertically in the center
+    align-items: flex-start;  // Align the items to the start of the flex container
     padding: 20px;
+    margin-top: 20px;  // Adjust as needed to give space from the navigation bar
 }
 
 .profile-img {
     width: 200px;
     height: auto;
-    margin-right: 20px;  // Space between the image and the text
+    margin-right: 20px;  // Maintain space between the image and text
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
-    align-items: center; // Centering the text vertically and horizontally
+    justify-content: center;  // Helps center the text if the image is taller
 }
 
 .profile-info h1 {
