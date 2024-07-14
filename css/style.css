@@ -7,7 +7,7 @@ body {
 
 header {
     text-align: center;
-    padding: 5px; /* 减少 padding */
+    padding: 10px; /* 减少 padding */
     background-color: #ff7500; /* 橘黄色 */
     color: white;
 }
