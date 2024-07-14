@@ -48,40 +48,28 @@ main {
     padding: 20px;
 }
 
-#home .home-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
 }
 
 .profile-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin-top: 40px; /* Increased spacing from the nav bar */
 }
 
 .profile-img {
     width: 200px;
     height: auto;
-    margin-right: 20px; /* Space between image and text */
+    margin-bottom: 15px;
 }
 
-.profile-info h1 {
-    font-size: 1.5em;
-    font-weight: 600; /* Bold for name */
-}
-
-.profile-info h2 {
-    font-size: 0.9em;
-    font-weight: 400; /* Normal weight for title */
-    margin-top: 5px;
-}
-
-.about-text, .group-news {
-    padding: 20px;
-    margin: 10px;
-    flex: 1;
+.profile-info h1, .profile-info h2, .profile-info p {
+    text-align: center;
 }
 
 footer {
@@ -89,5 +77,5 @@ footer {
     padding: 10px;
     background-color: #2e8b57;
     color: white;
-    margin-top: auto; /* Ensures footer is at the bottom */
+    margin-top: auto;
 }
