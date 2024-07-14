@@ -8,7 +8,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #ff9800; /* 橘黄色 */
+    background-color: #ff7500; /* 橘黄色 */
     color: white;
 }
 
@@ -66,7 +66,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #ff7500;
     color: white;
     position: relative;
     bottom: 0;
