@@ -6,28 +6,40 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 15px; /* 增加 padding 以略微增加高度 */
     background-color: #ff7500; /* 橘黄色 */
     color: white;
+    padding: 15px; /* 增加 padding 以略微增加高度 */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .profile-img {
     width: 120px; /* 略微增大图片宽度 */
     height: auto;
     border-radius: 0; /* 长方形 */
-    display: block;
-    margin: 0 auto 10px auto; /* 增加底部 margin 以增加间距 */
+    margin-right: 15px; /* 增加右边距以增加间距 */
 }
 
-header h1 {
+.header-text {
+    text-align: left;
+}
+
+.header-text h1 {
     margin: 5px 0 10px 0; /* 增加底部 margin 以增加间距 */
     font-size: 1.5em; /* 调整字体大小以适应高度 */
 }
 
-header h2 {
+.header-text h2 {
     margin: 0;
     font-size: 1.2em; /* 调整字体大小以适应高度 */
+}
+
+.header-text p {
+    margin: 0;
 }
 
 nav {
