@@ -10,101 +10,70 @@ body {
 
 .wrapper {
     flex: 1;
+    padding: 20px;
 }
 
 nav {
     background-color: #2e8b57; /* 墨绿色 */
     overflow: hidden;
-    padding: 10px 0; /* 增加顶部和底部 padding 以增加高度 */
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px; /* 增加左右 margin 以增加间距 */
+    margin: 0 10px;
 }
 
 nav ul li a {
     display: inline-block;
     color: white;
-    text-align: center;
-    padding: 10px 16px; /* 保持较小的 padding */
+    padding: 10px 16px;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    background-color: #3cb371; /* 更浅的绿色 */
-}
-
-header {
-    background-color: #ff7500; /* 橘黄色 */
-    color: white;
-    padding: 40px 20px; /* 增加 padding 以增加高度 */
-    text-align: center;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-container h1 {
-    margin: 10px 0; /* 增加 margin 以增加间距 */
-    font-size: 1.5em; /* 调整字体大小 */
-}
-
-.header-container h2 {
-    margin: 5px 0; /* 增加 margin 以增加间距 */
-    font-size: 1.2em; /* 调整字体大小 */
-}
-
-.header-container p {
-    margin: 5px 0; /* 增加 margin 以增加间距 */
-    font-size: 1em; /* 调整字体大小 */
+    background-color: #3cb371;
 }
 
 main {
-    padding: 20px;
-    margin: 20px auto; /* 设置自动左右 margin 以居中 */
-    max-width: 800px; /* 设置最大宽度以限制内容宽度 */
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-.about-container {
+#about {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left, .about-middle, .about-right {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
 }
 
 .profile-img {
-    width: 150px; /* 增大图片宽度 */
+    width: 200px; /* Larger image */
     height: auto;
-    border-radius: 0; /* 长方形 */
-    margin-right: 20px; /* 增加右边距以增加间距 */
+    display: block;
+    margin-bottom: 15px;
 }
 
-.about-text {
-    flex: 1;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0; /* 设置上下 margin 以增加间距 */
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.personal-info h1, .personal-info h2, .personal-info p {
+    margin: 5px 0;
 }
 
 footer {
     text-align: center;
-    padding: 10px; /* 减少 footer 的 padding */
-    background-color: #2e8b57; /* 墨绿色 */
+    padding: 10px;
+    background-color: #2e8b57;
     color: white;
-    margin-top: 20px; /* 增加顶部 margin 以增加间距 */
+    margin-top: auto; /* Keeps footer at the bottom */
 }
