@@ -13,7 +13,7 @@ header {
 }
 
 .profile-img {
-    width: 100px; /* 减小图片宽度 */
+    width: 120px; /* 减小图片宽度 */
     height: auto;
     border-radius: 0; /* 长方形 */
     display: block;
@@ -21,7 +21,7 @@ header {
 }
 
 header h1, header h2 {
-    margin: 5px 0; /* 减少 margin */
+    margin: 10px 0; /* 减少 margin */
 }
 
 nav {
