@@ -58,7 +58,7 @@ main {
     display: flex;
     align-items: center;
     padding: 20px;
-    margin-top: 20px; /* Add spacing from nav bar */
+    margin-top: 40px; /* Increased spacing from the nav bar */
 }
 
 .profile-img {
@@ -89,5 +89,5 @@ footer {
     padding: 10px;
     background-color: #2e8b57;
     color: white;
-    margin-top: auto; /* Ensure footer is at the bottom */
+    margin-top: auto; /* Ensures footer is at the bottom */
 }
