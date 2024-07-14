@@ -7,8 +7,8 @@ body {
 
 header {
     text-align: center;
-    padding: 15px; /* 略微增加 padding */
-    background-color: #ff8000; /* 橘黄色 */
+    padding: 15px; /* 增加 padding 以略微增加高度 */
+    background-color: #ff7500; /* 橘黄色 */
     color: white;
 }
 
@@ -17,16 +17,23 @@ header {
     height: auto;
     border-radius: 0; /* 长方形 */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px auto; /* 增加底部 margin 以增加间距 */
 }
 
-header h1, header h2 {
-    margin: 5px 0; /* 保持较小的 margin */
+header h1 {
+    margin: 5px 0 10px 0; /* 增加底部 margin 以增加间距 */
+    font-size: 1.5em; /* 调整字体大小以适应高度 */
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2em; /* 调整字体大小以适应高度 */
 }
 
 nav {
     background-color: #2e8b57; /* 墨绿色 */
     overflow: hidden;
+    padding: 10px 0; /* 增加顶部和底部 padding 以增加高度 */
 }
 
 nav ul {
@@ -38,7 +45,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 10px; /* 增加左右 margin 以增加间距 */
 }
 
 nav ul li a {
@@ -55,12 +62,13 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto; /* 设置自动左右 margin 以居中 */
+    max-width: 800px; /* 设置最大宽度以限制内容宽度 */
 }
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0; /* 设置上下 margin 以增加间距 */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -75,4 +83,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px; /* 增加顶部 margin 以增加间距 */
 }
