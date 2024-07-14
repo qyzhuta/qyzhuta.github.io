@@ -7,13 +7,13 @@ body {
 
 header {
     text-align: center;
-    padding: 10px; /* 减少 padding */
-    background-color: #ff7500; /* 橘黄色 */
+    padding: 15px; /* 略微增加 padding */
+    background-color: #ff8000; /* 橘黄色 */
     color: white;
 }
 
 .profile-img {
-    width: 120px; /* 减小图片宽度 */
+    width: 120px; /* 略微增大图片宽度 */
     height: auto;
     border-radius: 0; /* 长方形 */
     display: block;
@@ -21,7 +21,7 @@ header {
 }
 
 header h1, header h2 {
-    margin: 10px 0; /* 减少 margin */
+    margin: 5px 0; /* 保持较小的 margin */
 }
 
 nav {
@@ -45,7 +45,7 @@ nav ul li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 10px 16px; /* 减少 padding */
+    padding: 10px 16px; /* 保持较小的 padding */
     text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ section {
 
 footer {
     text-align: center;
-    padding: 5px;
+    padding: 5px; /* 减少 footer 的 padding */
     background-color: #2e8b57; /* 墨绿色 */
     color: white;
     position: relative;
