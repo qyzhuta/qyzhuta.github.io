@@ -63,9 +63,8 @@ main {
 }
 
 .profile-img {
-    width: 200px;
+    width: 160px;
     height: auto;
-    margin-left: 40px;
     margin-right: 40px;  // Space between the image and the text
 }
 
