@@ -30,6 +30,8 @@ nav {
     background-color: #2e8b57;
     padding: 10px 0;
     text-align: center;
+    margin: 0 auto; /* 确保导航栏居中 */
+    width: 100%;
 }
 
 nav ul {
@@ -70,28 +72,27 @@ main {
 
 .profile-section {
     display: flex;
-    align-items: flex-start;  // Ensure the children align at their top edges
+    align-items: flex-start;  /* 确保子元素在顶部对齐 */
     padding: 20px;
-    margin-top: 20px;  // Space from the nav bar, adjust if necessary
+    margin-top: 20px;  /* 与导航栏的间距，可根据需要调整 */
 }
 
 .profile-img {
     width: 160px;
     height: auto;
-    margin-right: 40px;  // Space between the image and the text
+    margin-right: 40px;  /* 图片与文字之间的间距 */
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;  // Align text items to the left and top
+    align-items: flex-start;  /* 使文本项左对齐并在顶部对齐 */
 }
 
 .profile-info h1, .profile-info h2, .profile-info p {
-    margin: 0;  // Remove any default margin to ensure top alignment
-    padding: 0;  // Ensure no padding disrupts the alignment
+    margin: 0;  /* 移除默认的 margin 以确保顶部对齐 */
+    padding: 0;  /* 确保无 padding 影响对齐 */
 }
-
 
 .profile-info h1 {
     font-size: 1.8em;
@@ -109,9 +110,8 @@ main {
     font-weight: 500;
 }
 
-
 .profile-info p {
-    text-align: center;
+    text-align: left; /* 将文本左对齐以保持一致性 */
 }
 
 .about-text, .group-news {
@@ -125,5 +125,8 @@ footer {
     padding: 10px;
     background-color: #2e8b57;
     color: white;
-    margin-top: auto; // Ensure footer is at the bottom
+    margin-top: auto; /* 确保页脚在底部 */
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* 居中页脚 */
 }
