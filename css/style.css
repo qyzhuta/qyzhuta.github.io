@@ -34,8 +34,6 @@ nav {
     text-align: center;
 }
 
-
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -141,6 +139,40 @@ footer {
     margin: 0 auto; /* 居中页脚 */
 }
 
+#publications {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#publications h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2e8b57;
+    margin-bottom: 15px;
+}
+
+#publications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#publications li {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#publications strong {
+    font-weight: bold;
+    color: #2e8b57;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .profile-section {
@@ -160,6 +192,22 @@ footer {
 
     .container {
         padding: 0 10px;
+    }
+
+    #publications {
+        padding: 15px;
+    }
+
+    #publications h2 {
+        font-size: 1.4em;
+    }
+
+    #publications ul {
+        padding-left: 15px;
+    }
+
+    #publications li {
+        font-size: 0.9em;
     }
 }
 
@@ -193,5 +241,6 @@ footer {
 /* 在手机设备上的适配 */
 @media (max-width: 768px) {
     .course-card {
-        padding: 15px; /* 减少小屏幕设备上的内边距
-
+        padding: 15px; /* 减少小屏幕设备上的内边距 */
+    }
+}
