@@ -12,15 +12,15 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#group@UTD">Group@UTD</a></li>
-                    <li><a href="#teaching">Teaching</a></li>
-                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#research" onclick="showSection('research')">Research</a></li>
+                    <li><a href="#group@UTD" onclick="showSection('group@UTD')">Group@UTD</a></li>
+                    <li><a href="#teaching" onclick="showSection('teaching')">Teaching</a></li>
+                    <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
                 </ul>
             </nav>
             <main>
-                <section id="home" class="card">
+                <section id="home" class="card section-content">
                     <div class="profile-section">
                         <img src="images/profile.jpg" alt="Qingyu Zhu" class="profile-img">
                         <div class="profile-info">
@@ -39,11 +39,17 @@
                         </div>
                     </div>
                 </section>
-                <!-- Other sections -->
-                <section id="teaching" class="card section-content">
+                <section id="research" class="card section-content" style="display:none;">
+                    <h2>Research</h2>
+                    <p>Research content goes here.</p>
+                </section>
+                <section id="group@UTD" class="card section-content" style="display:none;">
+                    <h2>Group@UTD</h2>
+                    <p>Group content goes here.</p>
+                </section>
+                <section id="teaching" class="card section-content" style="display:none;">
                     <div class="course-section">
                         <h2>Teaching</h2>
-
                         <div class="course-card">
                             <h1>PHYS2326 Electromagnetism and Waves</h1>
                             <p>Semesters: 2024Spring</p>
@@ -57,9 +63,11 @@
                             <p>Topics include electricity, magnetism, and optics. 
                                 May not be used to satisfy degree requirements for majors in the School of Engineering and Computer Science. </p>
                         </div>
-
-                        
                     </div>
+                </section>
+                <section id="publications" class="card section-content" style="display:none;">
+                    <h2>Publications</h2>
+                    <p>Publications content goes here.</p>
                 </section>
             </main>
             <footer>
@@ -67,6 +75,17 @@
             </footer>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section-content');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show home section by default
+        showSection('home');
+    </script>
 </body>
 </html>
