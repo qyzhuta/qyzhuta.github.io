@@ -176,14 +176,14 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
 }
 
-.course-card h3 {
+.course-card h1 {
     font-size: 1.5em; /* 标题字体大小 */
     font-weight: 600; /* 标题字体加粗 */
     margin-bottom: 10px; /* 标题与内容间的间距 */
     color: #2e8b57; /* 标题颜色 */
 }
 
-.course-card p {
+.course-card h2, p {
     font-size: 1em; /* 正文字体大小 */
     color: #555555; /* 正文字体颜色 */
     line-height: 1.6; /* 行高，增加可读性 */
