@@ -8,9 +8,22 @@ body {
     min-height: 100vh;
 }
 
+.container {
+    max-width: 1200px; /* 设置最大宽度 */
+    width: 100%; /* 宽度占满容器 */
+    margin: 0 auto; /* 居中对齐 */
+    padding: 0 20px; /* 内边距 */
+    box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
+}
+
 .wrapper {
     flex: 1;
     padding: 20px;
+}
+
+nav, .profile-section, footer {
+    width: 100%; /* 宽度为容器的100% */
+    box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
 }
 
 nav {
