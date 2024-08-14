@@ -24,14 +24,14 @@ body {
 nav, .profile-section, footer {
     width: 100%; /* 宽度为容器的100% */
     box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
+    max-width: 1200px; /* 确保最大宽度与容器一致 */
+    margin: 0 auto; /* 居中对齐 */
 }
 
 nav {
     background-color: #2e8b57;
     padding: 10px 0;
     text-align: center;
-    margin: 0 auto; /* 确保导航栏居中 */
-    width: 100%;
 }
 
 nav ul {
@@ -68,6 +68,8 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 10px;
+    width: 100%; /* 确保卡片宽度与容器一致 */
+    box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
 }
 
 .profile-section {
@@ -75,6 +77,10 @@ main {
     align-items: flex-start;  /* 确保子元素在顶部对齐 */
     padding: 20px;
     margin-top: 20px;  /* 与导航栏的间距，可根据需要调整 */
+    width: 100%; /* 确保内容宽度与容器一致 */
+    box-sizing: border-box;
+    max-width: 1200px; /* 确保最大宽度与容器一致 */
+    margin: 0 auto; /* 居中对齐 */
 }
 
 .profile-img {
@@ -87,6 +93,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;  /* 使文本项左对齐并在顶部对齐 */
+    width: 100%;
 }
 
 .profile-info h1, .profile-info h2, .profile-info p {
@@ -128,5 +135,28 @@ footer {
     margin-top: auto; /* 确保页脚在底部 */
     width: 100%;
     box-sizing: border-box;
+    max-width: 1200px; /* 确保最大宽度与容器一致 */
     margin: 0 auto; /* 居中页脚 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
 }
