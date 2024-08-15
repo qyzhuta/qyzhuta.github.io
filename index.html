@@ -11,18 +11,18 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <nav>
-                <div class="nav-container">
-                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-                    <ul id="nav-list">
-                        <li><a href="#home" onclick="showSection('home')">Home</a></li>
-                        <li><a href="#research" onclick="showSection('research')">Research</a></li>
-                        <li><a href="#group" onclick="showSection('group')">Group</a></li>
-                        <li><a href="#teaching" onclick="showSection('teaching')">Teaching</a></li>
-                        <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
+            <div class="nav-container">
+                <span class="menu-icon" onclick="toggleMenu()">&#9776;</span> <!-- 菜单图标 -->
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="#home" onclick="showSection('home'); toggleMenu()">Home</a></li>
+                        <li><a href="#research" onclick="showSection('research'); toggleMenu()">Research</a></li>
+                        <li><a href="#group" onclick="showSection('group'); toggleMenu()">Group</a></li>
+                        <li><a href="#teaching" onclick="showSection('teaching'); toggleMenu()">Teaching</a></li>
+                        <li><a href="#publications" onclick="showSection('publications'); toggleMenu()">Publications</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <main>
                 <section id="home" class="card section-content">
                     <div class="profile-section">
@@ -200,14 +200,14 @@
             var menu = document.getElementById('nav-menu');
             menu.classList.toggle('show');
         }
-
+        
         function showSection(sectionId) {
             var sections = document.querySelectorAll('.section-content');
             sections.forEach(function(section) {
                 section.style.display = 'none';
             });
             document.getElementById(sectionId).style.display = 'block';
-            
+        
             // Hide menu after section change (for small screens)
             if (window.innerWidth <= 768) {
                 toggleMenu();
