@@ -115,6 +115,17 @@ nav ul li a:hover {
     text-align: left; /* 将文本左对齐以保持一致性 */
 }
 
+.scholar-link {
+    margin-top: 20px;
+}
+
+.scholar-link i {
+    font-size: 24px; /* 根据需要调整图标大小 */
+    color: #4285F4; /* Google Scholar 的蓝色 */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 .about-text, .group-news {
     padding: 20px;
     margin: 10px;
