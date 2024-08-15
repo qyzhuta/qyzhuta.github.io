@@ -21,18 +21,17 @@ body {
     padding: 20px;
 }
 
-.nav-container {
-    position: relative;
+nav, .profile-section, footer {
+    width: 100%; /* 宽度为容器的100% */
+    box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
+    max-width: 1200px; /* 确保最大宽度与容器一致 */
+    margin: 0 auto; /* 居中对齐 */
+}
+
+nav {
     background-color: #2e8b57;
     padding: 10px 0;
     text-align: center;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
 }
 
 nav ul {
@@ -57,11 +56,21 @@ nav ul li a:hover {
     background-color: #3cb371;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* 确保内容宽度与容器一致 */
+    box-sizing: border-box;
+    max-width: 1200px; /* 确保最大宽度与容器一致 */
+}
+
 .card {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0;
     width: 100%; /* 确保卡片宽度与容器一致 */
     box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
 }
@@ -115,18 +124,6 @@ nav ul li a:hover {
     text-align: left; /* 将文本左对齐以保持一致性 */
 }
 
-.scholar-link {
-    margin: 10px 0; /* 在Email和Education之间添加间距 */
-}
-
-.scholar-link i {
-    font-size: 24px; /* 根据需要调整图标大小 */
-    color: #4285F4; /* Google Scholar 的蓝色 */
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-
 .about-text, .group-news {
     padding: 20px;
     margin: 10px;
@@ -145,40 +142,6 @@ footer {
     margin: 0 auto; /* 居中页脚 */
 }
 
-#publications {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#publications h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #2e8b57;
-    margin-bottom: 15px;
-}
-
-#publications ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#publications li {
-    font-size: 1em;
-    color: #555555;
-    line-height: 1.6;
-    margin-bottom: 15px;  /* 为每个条目添加一些间距 */
-}
-
-#publications strong {
-    font-weight: bold;
-    color: #2e8b57;
-}
-
 /* 响应式设计 */
 @media (max-width: 768px) {
     .profile-section {
@@ -191,51 +154,23 @@ footer {
         margin-bottom: 20px;
     }
 
-    .nav-container {
-        text-align: left;
-        padding: 10px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #2e8b57;
-        width: 100%;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
     nav ul li {
         display: block;
-        text-align: center;
         margin: 10px 0;
-    }
-
-    .menu-icon {
-        display: block;
     }
 
     .container {
         padding: 0 10px;
     }
 
-    #publications {
+    main, footer, .card {
         padding: 15px;
+        width: 100%; /* 确保卡片和页脚宽度与容器一致 */
+        box-sizing: border-box;
     }
 
-    #publications h2 {
-        font-size: 1.4em;
-    }
-
-    #publications ul {
-        padding-left: 15px;
-    }
-
-    #publications li {
-        font-size: 0.9em;
-        margin-bottom: 10px; /* 确保移动设备上有足够的间距 */
+    .container, .wrapper, .profile-section {
+        padding: 0;
     }
 }
 
