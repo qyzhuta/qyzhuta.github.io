@@ -21,17 +21,18 @@ body {
     padding: 20px;
 }
 
-nav, .profile-section, footer {
-    width: 100%; /* 宽度为容器的100% */
-    box-sizing: border-box; /* 使 padding 不影响元素的实际宽度 */
-    max-width: 1200px; /* 确保最大宽度与容器一致 */
-    margin: 0 auto; /* 居中对齐 */
-}
-
-nav {
+.nav-container {
+    position: relative;
     background-color: #2e8b57;
     padding: 10px 0;
     text-align: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
 }
 
 nav ul {
@@ -54,13 +55,6 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #3cb371;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
 }
 
 .card {
@@ -185,9 +179,30 @@ footer {
         margin-bottom: 20px;
     }
 
+    .nav-container {
+        text-align: left;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #2e8b57;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
     nav ul li {
         display: block;
+        text-align: center;
         margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
     }
 
     .container {
@@ -297,4 +312,3 @@ footer {
         height: 100px; /* 调整为小屏幕的图片高度 */
     }
 }
-
