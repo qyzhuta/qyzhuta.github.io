@@ -273,8 +273,7 @@ footer {
 }
 
 .student-info h4 {
-    font-size: 1.2em; /* 名字的字体大小 */
-    font-weight: 600; /* 名字加粗 */
+    font-size: 1.1em; /* 名字的字体大小 */
     margin-bottom: 5px; /* 名字与简介之间的间距 */
 }
 
