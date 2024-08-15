@@ -11,13 +11,16 @@
     <div class="wrapper">
         <div class="container">
             <nav>
-                <ul>
-                    <li><a href="#home" onclick="showSection('home')">Home</a></li>
-                    <li><a href="#research" onclick="showSection('research')">Research</a></li>
-                    <li><a href="#group" onclick="showSection('group')">Group</a></li>
-                    <li><a href="#teaching" onclick="showSection('teaching')">Teaching</a></li>
-                    <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
-                </ul>
+                <div class="nav-container">
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <ul id="nav-list">
+                        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                        <li><a href="#research" onclick="showSection('research')">Research</a></li>
+                        <li><a href="#group" onclick="showSection('group')">Group</a></li>
+                        <li><a href="#teaching" onclick="showSection('teaching')">Teaching</a></li>
+                        <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
+                    </ul>
+                </div>
             </nav>
             <main>
                 <section id="home" class="card section-content">
