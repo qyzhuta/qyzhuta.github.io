@@ -11,18 +11,18 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <nav>
-                <div class="nav-container">
-                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-                    <ul id="nav-list">
+            <div class="nav-container">
+                <span class="menu-icon" onclick="toggleMenu()">&#9776;</span> <!-- 菜单图标 -->
+                <nav>
+                    <ul id="nav-menu">
                         <li><a href="#home" onclick="showSection('home')">Home</a></li>
                         <li><a href="#research" onclick="showSection('research')">Research</a></li>
                         <li><a href="#group" onclick="showSection('group')">Group</a></li>
                         <li><a href="#teaching" onclick="showSection('teaching')">Teaching</a></li>
                         <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <main>
                 <section id="home" class="card section-content">
                     <div class="profile-section">
