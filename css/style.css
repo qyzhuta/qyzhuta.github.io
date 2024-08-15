@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 .scholar-link {
-    margin-top: 20px;
+    margin: 10px 0; /* 在Email和Education之间添加间距 */
 }
 
 .scholar-link i {
@@ -125,6 +125,7 @@ nav ul li a:hover {
     margin-right: 8px;
     vertical-align: middle;
 }
+
 
 .about-text, .group-news {
     padding: 20px;
