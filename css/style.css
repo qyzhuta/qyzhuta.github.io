@@ -56,6 +56,32 @@ nav ul li a:hover {
     background-color: #3cb371;
 }
 
+/* 在小屏幕上的样式 */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #2e8b57;
+        width: 100%;
+        padding-left: 0; /* 确保左边没有填充 */
+        text-align: left; /* 确保菜单项左对齐 */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
