@@ -314,3 +314,64 @@ footer {
         height: 100px; /* 调整为小屏幕的图片高度 */
     }
 }
+
+.news-card, .announcement-card {
+    background-color: #f9f9f9; /* Background color for the sub-cards */
+    border: 1px solid #dcdcdc; /* Border color for the sub-cards */
+    border-radius: 8px; /* Rounded corners for the sub-cards */
+    padding: 15px; /* Padding inside the sub-cards */
+    margin-bottom: 10px; /* Space between sub-cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow effect */
+}
+
+.news-card h4, .announcement-card h4 {
+    font-size: 1.2em; /* Font size for sub-card titles */
+    margin-bottom: 8px; /* Space between the title and the content */
+    color: #2e8b57; /* Title color */
+}
+
+.news-card p, .announcement-card p {
+    font-size: 1em; /* Font size for sub-card content */
+    color: #555555; /* Content color */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margins */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .group-card {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin-bottom: 15px; /* Reduce space between group cards on small screens */
+    }
+
+    .news-card, .announcement-card {
+        padding: 10px; /* Adjust padding for sub-cards on smaller screens */
+        margin-bottom: 10px; /* Ensure enough space between sub-cards */
+    }
+
+    .news-card h4, .announcement-card h4 {
+        font-size: 1.1em; /* Adjust title font size for smaller screens */
+    }
+
+    .news-card p, .announcement-card p {
+        font-size: 0.9em; /* Adjust content font size for smaller screens */
+    }
+    
+    /* Center-align text and elements on small screens for better readability */
+    .group-card h3 {
+        text-align: center; /* Center the card titles on small screens */
+    }
+
+    .news-card, .announcement-card {
+        text-align: center; /* Center the content inside the sub-cards */
+    }
+
+    .news-card h4, .announcement-card h4 {
+        margin-bottom: 10px; /* Add some space between title and content on small screens */
+    }
+
+    .news-card p, .announcement-card p {
+        text-align: justify; /* Justify text for better readability on small screens */
+    }
+}
+
