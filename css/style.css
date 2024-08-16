@@ -330,7 +330,7 @@ footer {
     color: #2e8b57; /* Title color */
 }
 
-.news-card p, .announcement-card p {
+.news-card p {
     font-size: 1em; /* Font size for sub-card content */
     color: #555555; /* Content color */
     line-height: 1.6; /* Line height for better readability */
