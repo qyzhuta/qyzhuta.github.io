@@ -344,6 +344,13 @@ footer {
     padding-right: 50px; /* Space for the "More" link */
 }
 
+.announcement-card p {
+    font-size: 1em; /* Font size for sub-card content */
+    color: #555555; /* Content color */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margins */
+}
+
 .more-link {
     display: inline-block;
     font-size: 0.9em;
