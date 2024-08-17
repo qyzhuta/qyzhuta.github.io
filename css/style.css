@@ -445,3 +445,64 @@ footer {
         text-align: justify; /* Justify text for better readability on small screens */
     }
 }
+
+.research-card {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Background color for the card */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.research-img {
+    flex: 1;
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+.research-img img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #555555;
+    text-align: center;
+    margin-top: 5px; /* Space between the image and the caption */
+}
+
+.research-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top */
+}
+
+.research-info h3 {
+    font-size: 1.5em;
+    color: #2e8b57; /* Title color */
+    margin-bottom: 10px; /* Space between the title and the description */
+}
+
+.research-info p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .research-card {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .research-img {
+        margin-right: 0;
+        margin-bottom: 15px; /* Space between image and text on small screens */
+    }
+}
