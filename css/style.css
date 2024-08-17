@@ -506,3 +506,68 @@ footer {
         margin-bottom: 15px; /* Space between image and text on small screens */
     }
 }
+
+.research-interests-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.interest-img {
+    max-width: 40%; /* Adjust the width of the image container */
+    margin-right: 20px;
+}
+
+.interest-img img {
+    width: 100%; /* Ensure the image fits within the container */
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.interest-details {
+    max-width: 55%; /* Adjust the width of the details container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interest-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.interest-details li {
+    margin-bottom: 15px;
+}
+
+.interest-details p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .research-interests-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interest-img, .interest-details {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .interest-img {
+        margin-bottom: 20px;
+    }
+}
