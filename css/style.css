@@ -507,6 +507,17 @@ footer {
     }
 }
 
+/* Ensure the card style is applied */
+#research-interests {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%; /* Ensure the card width matches the container */
+    box-sizing: border-box;
+    border-radius: 8px; /* Optional: add rounded corners to the card */
+}
+
 .research-interests-content {
     display: flex;
     align-items: flex-start;
@@ -555,6 +566,7 @@ footer {
     margin-top: 5px;
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .research-interests-content {
         flex-direction: column;
@@ -571,3 +583,4 @@ footer {
         margin-bottom: 20px;
     }
 }
+
