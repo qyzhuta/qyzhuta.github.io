@@ -458,6 +458,12 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
+.research-img-container, .interest-img-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
 .research-img, .interest-img {
     flex: 1;
     max-width: 45%;
