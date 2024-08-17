@@ -446,108 +446,49 @@ footer {
     }
 }
 
-.research-card {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    margin-bottom: 20px;
-    background-color: #ffffff; /* Background color for the card */
-    border: 1px solid #e0e0e0; /* Border color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-.research-img {
-    flex: 1;
-    margin-right: 20px; /* Space between the image and the text */
-}
-
-.research-img img {
-    max-width: 100%; /* Make sure the image is responsive */
-    height: auto;
-    border-radius: 8px; /* Rounded corners for the image */
-}
-
-.caption {
-    font-size: 0.9em;
-    color: #555555;
-    text-align: center;
-    margin-top: 5px; /* Space between the image and the caption */
-}
-
-.research-info {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align text to the top */
-}
-
-.research-info h3 {
-    font-size: 1.5em;
-    color: #2e8b57; /* Title color */
-    margin-bottom: 10px; /* Space between the title and the description */
-}
-
-.research-info p {
-    font-size: 1em;
-    color: #555555;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .research-card {
-        flex-direction: column; /* Stack elements vertically on small screens */
-    }
-
-    .research-img {
-        margin-right: 0;
-        margin-bottom: 15px; /* Space between image and text on small screens */
-    }
-}
-
-/* Ensure the card style is applied */
-#research-interests {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin: 10px 0;
-    width: 100%; /* Ensure the card width matches the container */
-    box-sizing: border-box;
-    border-radius: 8px; /* Optional: add rounded corners to the card */
-}
-
-.research-interests-content {
+/* Research Card and Interests Styles */
+.research-card, .research-interests-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.interest-img {
-    max-width: 40%; /* Adjust the width of the image container */
+.research-img, .interest-img {
+    flex: 1;
+    max-width: 45%;
     margin-right: 20px;
 }
 
-.interest-img img {
-    width: 100%; /* Ensure the image fits within the container */
-    border-radius: 8px; /* Optional: add rounded corners to the image */
+.research-info, .interest-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.research-info h3, .interest-details h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.research-info p, .interest-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.research-img img, .interest-img img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 .caption {
     font-size: 0.9em;
-    color: #555;
-    margin-top: 5px;
+    color: #777;
     text-align: center;
-}
-
-.interest-details {
-    max-width: 55%; /* Adjust the width of the details container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 5px;
 }
 
 .interest-details ul {
@@ -559,28 +500,21 @@ footer {
     margin-bottom: 15px;
 }
 
-.interest-details p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 5px;
-}
-
-/* Responsive adjustments for smaller screens */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
-    .research-interests-content {
+    .research-card, .research-interests-content {
         flex-direction: column;
-        align-items: center;
     }
 
-    .interest-img, .interest-details {
+    .research-img, .interest-img {
         max-width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
-    .interest-img {
+        margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .research-info, .interest-details {
+        max-width: 100%;
+    }
 }
+
 
