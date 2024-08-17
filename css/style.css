@@ -449,9 +449,13 @@ footer {
 /* Research Card and Interests Styles */
 .research-card, .research-interests-content {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
     margin-bottom: 20px;
+    background-color: #ffffff; /* Background color for the card */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 .research-img, .interest-img {
@@ -469,6 +473,7 @@ footer {
 
 .research-info h3, .interest-details h3 {
     font-size: 1.6em;
+    color: #2e8b57; /* Title color */
     margin-bottom: 15px;
 }
 
