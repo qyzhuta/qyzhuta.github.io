@@ -379,7 +379,6 @@ footer {
     font-size: 1em; /* Font size for sub-card content */
     color: #555555; /* Content color */
     line-height: 1.6; /* Line height for better readability */
-    margin: 0; /* Remove default margins */
 }
 
 .more-link {
